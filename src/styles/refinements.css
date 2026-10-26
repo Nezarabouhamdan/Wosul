@@ -1,0 +1,61 @@
+/* Icon sizing and final visual refinements. */
+
+.mobile-project {
+  display: none;
+}
+
+/* Crisp vector UI on high-density screens, including iOS. */
+.ui-arrow {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex: none;
+  vertical-align: middle;
+}
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.arrow .ui-arrow {
+  width: 20px;
+  height: 20px;
+}
+.route-glyph .ui-arrow,
+.start-mark .ui-arrow {
+  display: block;
+}
+.logo img,
+.footer-brand img {
+  object-fit: contain;
+  image-rendering: auto;
+}
+.mobile-nav svg {
+  width: 16px;
+  height: 16px;
+}
+.mobile-tile i .ui-arrow {
+  width: 14px;
+  height: 14px;
+}
+.booking-confirm .ui-arrow,
+.web-cta .ui-arrow {
+  width: 1em;
+  height: 1em;
+}
+.phone-service .ui-arrow {
+  margin-inline-start: auto;
+  width: 18px;
+  height: 18px;
+}
+.hero-art {
+  animation: none;
+}
+
+/* Keep desktop copy readable over the glass artwork. */
+.hero-shade,
+html[lang='en'] .hero-shade {
+  background:
+    linear-gradient(270deg, #080b10 0%, #080b10ed 30%, #080b1095 55%, #080b1000 74%),
+    linear-gradient(0deg, #080b10 0%, #080b1000 26%, #080b1000 82%, #080b1099 100%);
+}

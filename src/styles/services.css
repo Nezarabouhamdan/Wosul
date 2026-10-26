@@ -1,0 +1,66 @@
+/* Home page service cards. */
+
+.service-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid var(--light-line);
+  border-inline-start: 1px solid var(--light-line);
+}
+.service-card {
+  padding: 35px 38px;
+  border-bottom: 1px solid var(--light-line);
+  border-inline-end: 1px solid var(--light-line);
+  transition: background 0.3s;
+}
+.service-card:hover {
+  background: white;
+}
+.service-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #617581;
+}
+.service-card-top > .mono {
+  font-size: 9px;
+}
+.service-card-top svg {
+  width: 30px;
+  height: 30px;
+  color: #087da6;
+}
+.service-card h3 {
+  font-size: 30px;
+  letter-spacing: -1.3px;
+  margin-top: 25px;
+}
+.service-card > p {
+  font-size: 12px;
+  color: #586b77;
+  margin-top: 15px;
+  max-width: 475px;
+}
+.service-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 25px 0 29px;
+  font-size: 11px;
+  color: #465d6b;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+}
+.service-card li:before {
+  content: '+';
+  margin-inline-end: 8px;
+  color: #087da6;
+}
+.service-card-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  border-top: 1px solid var(--light-line);
+  padding-top: 20px;
+}

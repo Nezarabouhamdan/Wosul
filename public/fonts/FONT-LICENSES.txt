@@ -1,0 +1,7 @@
+Cairo-Arabic-Variable.woff2
+Source: https://github.com/google/fonts/tree/main/ofl/cairo
+Licensed under the SIL Open Font License 1.1; see Cairo-OFL.txt for the complete copyright and license text.
+
+NotoSans-Regular.woff2, NotoSans-Bold.woff2
+Copyright 2022 The Noto Project Authors (https://github.com/notofonts/latin-greek-cyrillic)
+This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL

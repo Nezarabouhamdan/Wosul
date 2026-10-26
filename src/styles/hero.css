@@ -1,0 +1,118 @@
+/* Home page hero and the capability ribbon below it. */
+
+.hero {
+  position: relative;
+  isolation: isolate;
+  min-height: 860px;
+  padding: 130px 6% 50px;
+  overflow: hidden;
+}
+.hero-art {
+  position: absolute;
+  z-index: -3;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 45% 50%;
+  animation: glass-breathe 16s ease-in-out infinite alternate;
+}
+.hero-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(270deg, #080b10f5 0%, #080b10e0 24%, #080b1050 51%, #080b1000 72%),
+    linear-gradient(0deg, #080b10 0%, #080b1000 24%, #080b1000 80%, #080b1099 100%);
+}
+.hero-topline {
+  display: flex;
+  justify-content: space-between;
+  color: #afbec8;
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  margin-bottom: 42px;
+  direction: ltr;
+}
+.hero-content {
+  max-width: 620px;
+  position: relative;
+  margin-inline-end: auto;
+}
+.eyebrow {
+  font-size: 12px;
+  color: #c4d3dc;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.eyebrow:before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--sky);
+}
+.accent {
+  color: var(--sky);
+}
+.hero h1 {
+  margin-bottom: 17px;
+}
+.hero-desc {
+  font-size: 15px;
+  line-height: 2.1;
+  color: #c0cbd5;
+  max-width: 490px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+}
+.hero-foot {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #a2afbd;
+}
+.hero-foot a {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 10px;
+}
+.hero-foot .mono {
+  font-size: 9px;
+}
+.capability-ribbon {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-block: 1px solid var(--line);
+  background: #0d1219;
+  padding: 0 6%;
+}
+.capability-ribbon a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 24px 26px;
+  border-inline-end: 1px solid var(--line);
+  font-size: 12px;
+}
+.capability-ribbon a:last-child {
+  border-inline-end: 0;
+}
+.capability-ribbon a:hover {
+  color: var(--sky);
+  background: #101b28;
+}
+.capability-ribbon .mono {
+  font-size: 8px;
+  color: var(--sky);
+}

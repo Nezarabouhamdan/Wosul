@@ -1,0 +1,94 @@
+/* Home page "lab" project grid and captions. */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 55px 32px;
+}
+.project.wide {
+  grid-column: 1 / -1;
+}
+.project-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  min-height: 420px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  padding: 40px;
+  transition: border-color 0.3s;
+}
+.project-visual:hover {
+  border-color: #43819a;
+}
+.crm-visual {
+  background: radial-gradient(ellipse at 50% 50%, #173447, #0c131e 72%);
+}
+.booking-visual {
+  background: #d8e7e9;
+}
+.app-visual {
+  background: radial-gradient(ellipse at 50% 50%, #103c54, #0c1520 74%);
+}
+.web-visual {
+  background: #ced6d3;
+}
+.project-open {
+  position: absolute;
+  inset-inline-end: 20px;
+  bottom: 20px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #ffffff44;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: #080b1055;
+  transition: background 0.3s;
+}
+.project-visual:hover .project-open {
+  background: var(--sky);
+  color: var(--ink);
+  border-color: var(--sky);
+}
+.project-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: end;
+  padding-top: 22px;
+}
+.project-caption .mono {
+  font-size: 9px;
+  color: var(--sky);
+}
+.project-caption h3 {
+  font-size: 30px;
+  margin-top: 7px;
+}
+.project-caption p {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 5px;
+}
+.project-caption > .text-link {
+  font-size: 11px;
+  flex-shrink: 0;
+}
+.work-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 25px;
+  margin-top: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.work-bottom p {
+  font-size: 10px;
+  color: var(--muted);
+  max-width: 600px;
+}

@@ -1,0 +1,35 @@
+/* Frequently asked questions. */
+
+.faq {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 9%;
+}
+.faq details {
+  border-top: 1px solid var(--light-line);
+  padding: 23px 0;
+}
+.faq details:last-child {
+  border-bottom: 1px solid var(--light-line);
+}
+.faq summary {
+  font-weight: 700;
+  font-size: 12px;
+  gap: 17px;
+}
+.faq summary > span[data-ar] {
+  flex: 1;
+}
+.faq .mono {
+  font-size: 9px;
+  color: #6f8693;
+}
+.faq .detail-plus {
+  color: #5e7987;
+}
+.faq p {
+  font-size: 12px;
+  color: #5a707b;
+  padding-inline-start: 37px;
+  margin-top: 16px;
+}

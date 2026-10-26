@@ -1,0 +1,59 @@
+/* Site footer and skip link. */
+
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 50px 6% 25px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.footer-brand img {
+  width: 130px;
+  height: 78px;
+}
+.footer-top h3 {
+  font-size: 22px;
+  letter-spacing: -1px;
+}
+.footer-top p {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+.footer-cta {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  font-size: 12px;
+  color: var(--sky);
+}
+.footer-bottom {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 10px;
+  color: #8095a5;
+}
+.footer-bottom .mono {
+  font-size: 8px;
+}
+.skip {
+  position: fixed;
+  top: -150px;
+  inset-inline-start: 15px;
+  background: var(--sky);
+  color: var(--ink);
+  padding: 10px 15px;
+  z-index: 100;
+  font-size: 12px;
+}
+.skip:focus {
+  top: 10px;
+}

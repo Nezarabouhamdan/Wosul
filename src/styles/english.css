@@ -1,0 +1,53 @@
+/* Typography adjustments for the English version. */
+
+html[lang='en'] h1 {
+  line-height: 1.1;
+  letter-spacing: -5px;
+  font-size: clamp(65px, 7vw, 104px);
+}
+html[lang='en'] .hero-content {
+  max-width: 610px;
+  margin-inline-start: auto;
+  margin-inline-end: 0;
+  text-align: left;
+}
+html[lang='en'] .hero-shade {
+  background:
+    linear-gradient(270deg, #080b10f5 0%, #080b10db 24%, #080b1050 51%, #080b1000 72%),
+    linear-gradient(0deg, #080b10 0%, #080b1000 24%, #080b1000 80%, #080b1099 100%);
+}
+html[lang='en'] .hero h1 {
+  margin: 22px 0 30px;
+}
+html[lang='en'] h2 {
+  line-height: 1.22;
+  letter-spacing: -2px;
+}
+html[lang='en'] h3 {
+  letter-spacing: -0.8px;
+}
+html[lang='en'] .hero-desc {
+  line-height: 1.9;
+  font-size: 14px;
+  max-width: 445px;
+}
+html[lang='en'] .service-hero h1 {
+  font-size: 46px;
+  line-height: 1.25;
+  letter-spacing: -2px;
+}
+html[lang='en'] .lab-intro h1 {
+  font-size: 54px;
+  line-height: 1.25;
+  letter-spacing: -2px;
+}
+html[lang='en'] .section-kicker {
+  font-size: 10px;
+  letter-spacing: 0.4px;
+}
+html[lang='en'] .service-card h3 {
+  font-size: 30px;
+}
+html[lang='en'] .scope-card h3 {
+  font-size: 27px;
+}

@@ -1,0 +1,143 @@
+/* Private inquiry inbox (/inbox). Kept separate from the public site styles. */
+
+@font-face {
+  font-family: Cairo;
+  src: url('/fonts/Cairo-Arabic-Variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #080b10;
+  color: #f2f4f2;
+  font:
+    14px/1.9 Cairo,
+    system-ui;
+}
+a {
+  color: #29aede;
+  text-decoration: none;
+}
+header,
+main {
+  max-width: 1040px;
+  margin: auto;
+  padding: 25px;
+}
+header {
+  border-bottom: 1px solid #25313d;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  width: 100px;
+  height: 62px;
+}
+h1 {
+  font-size: 35px;
+  font-weight: 300;
+  margin: 0;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 12px 0 0;
+}
+.sub {
+  color: #91a6b2;
+  margin: 5px 0 30px;
+}
+.entry {
+  border: 1px solid #2c3c49;
+  border-radius: 10px;
+  background: #101821;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  color: #8399a7;
+  font-size: 11px;
+}
+.ref {
+  font: 11px system-ui;
+  letter-spacing: 1px;
+  direction: ltr;
+}
+.company {
+  margin-top: 0;
+  color: #94abb7;
+}
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tags span {
+  padding: 4px 12px;
+  background: #143649;
+  border-radius: 20px;
+  font-size: 11px;
+  color: #75cce8;
+}
+.brief {
+  font-size: 16px;
+  white-space: pre-wrap;
+  margin-block: 25px;
+}
+.context {
+  background: #172733;
+  padding: 15px;
+  border-radius: 6px;
+  white-space: pre-wrap;
+  color: #bed0d8;
+}
+.details {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: #849eac;
+}
+.contact {
+  border-top: 1px solid #2a3d49;
+  margin-top: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  overflow-wrap: anywhere;
+}
+.empty {
+  text-align: center;
+  padding-block: 60px;
+}
+@media (max-width: 600px) {
+  header,
+  main {
+    padding: 20px;
+  }
+  .entry {
+    padding: 22px 18px;
+  }
+  .top {
+    flex-direction: column;
+    gap: 7px;
+  }
+  h1 {
+    font-size: 29px;
+  }
+  .brief {
+    font-size: 15px;
+  }
+  .contact {
+    gap: 15px;
+  }
+}

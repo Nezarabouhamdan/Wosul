@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.wrangler/
+
+# Local secrets (see .dev.vars.example)
+.dev.vars*
+!.dev.vars.example
+
+*.log
+.DS_Store

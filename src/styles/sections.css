@@ -1,0 +1,86 @@
+/* Shared section building blocks: kickers, headings, intro, concept note. */
+
+.section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  font-size: 10px;
+  margin-bottom: 24px;
+  color: var(--muted);
+}
+.section-kicker .mono {
+  color: var(--sky);
+  font-size: 9px;
+}
+.paper .section-kicker {
+  color: #596a75;
+}
+.paper .section-kicker .mono {
+  color: #087da6;
+}
+.intro {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 9%;
+  align-items: end;
+}
+.intro h2 {
+  font-size: clamp(32px, 3.5vw, 49px);
+}
+.intro-note {
+  max-width: 400px;
+}
+.intro-note > p {
+  font-size: 13px;
+  color: #4d5f6c;
+}
+.intro-note > p.small-copy {
+  font-size: 11px;
+  margin-top: 20px;
+  color: #697c87;
+}
+.route-glyph {
+  font: 80px var(--latin);
+  line-height: 1;
+  color: #087da6;
+  display: block;
+  margin-bottom: 18px;
+}
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 9%;
+  margin-bottom: 55px;
+}
+.section-heading > div:first-child {
+  flex: 1.3;
+}
+.section-heading > p,
+.section-heading > div:last-child:not(:first-child) {
+  flex: 1;
+  max-width: 375px;
+  color: var(--muted);
+  font-size: 13px;
+}
+.section-heading > div:last-child > p {
+  font-size: 13px;
+  color: var(--muted);
+}
+.paper .section-heading > p {
+  color: #596a75;
+}
+.concept-note {
+  font-size: 9px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 18px;
+  color: var(--muted);
+}
+.concept-note i {
+  width: 5px;
+  height: 5px;
+  background: var(--sky);
+  border-radius: 50%;
+}

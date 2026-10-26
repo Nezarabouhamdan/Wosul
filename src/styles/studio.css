@@ -1,0 +1,93 @@
+/* Team grid and starting-point scope cards. */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.team-grid article {
+  border-top: 1px solid var(--light-line);
+  padding-top: 28px;
+}
+/* Photos are transparent cut-outs, so the frame supplies the backdrop. */
+.team-photo {
+  position: relative;
+  aspect-ratio: 1;
+  margin-bottom: 26px;
+  overflow: hidden;
+  border-radius: 3px;
+  background: radial-gradient(circle at 50% 28%, #fbfcfc, #e3eaed 55%, #cdd9de);
+}
+.team-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team-photo > b {
+  position: absolute;
+  top: 14px;
+  inset-inline-start: 16px;
+  font-size: 9px;
+  color: #667d89;
+}
+.team-grid h3 {
+  font-size: 30px;
+  margin-bottom: 7px;
+}
+.team-grid strong {
+  font-size: 11px;
+  font-weight: 700;
+}
+.team-grid p {
+  font-size: 12px;
+  color: #617480;
+  margin-top: 18px;
+  max-width: 310px;
+}
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.scope-card {
+  padding: 32px 30px;
+  border: 1px solid var(--line);
+  background: #0c1119;
+}
+.scope-card.featured {
+  border-color: #347d98;
+  background: #0b1b27;
+}
+.scope-card .mono {
+  font-size: 8px;
+  color: var(--sky);
+}
+.scope-card h3 {
+  font-size: 28px;
+  margin-top: 32px;
+  margin-bottom: 18px;
+}
+.scope-card > p {
+  font-size: 13px;
+  color: #c4cfd7;
+}
+.scope-card .small-copy {
+  font-size: 11px;
+  color: var(--muted);
+  min-height: 61px;
+}
+.scope-rule {
+  width: 30px;
+  height: 2px;
+  background: var(--sky);
+  margin: 25px 0;
+}
+.scope-card .text-link {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--line);
+  margin-top: 25px;
+  padding-top: 20px;
+  font-size: 11px;
+}

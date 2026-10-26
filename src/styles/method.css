@@ -1,0 +1,83 @@
+/* Home page method steps (expandable details). */
+
+.method {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 10%;
+  align-items: start;
+}
+.method-heading > p {
+  font-size: 13px;
+  max-width: 370px;
+  color: var(--muted);
+  margin-top: 22px;
+}
+.method-route {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  position: relative;
+  margin-top: 45px;
+}
+.method-route:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #477c91;
+}
+.method-route span {
+  display: block;
+  width: 9px;
+  height: 9px;
+  background: var(--sky);
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  z-index: 1;
+}
+.method-list details {
+  border-top: 1px solid var(--line);
+  padding: 25px 0;
+}
+.method-list details:last-child {
+  border-bottom: 1px solid var(--line);
+}
+summary {
+  cursor: pointer;
+  list-style: none;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
+.method-list summary,
+.faq summary {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.method-list summary .mono {
+  font-size: 10px;
+  color: var(--sky);
+}
+.method-list h3 {
+  font-size: 28px;
+  flex: 1;
+}
+.detail-plus {
+  font: 25px var(--latin);
+  color: #7c94a6;
+  transition: transform 0.25s;
+}
+.method-list p {
+  font-size: 13px;
+  color: var(--muted);
+  padding-inline-start: 46px;
+  max-width: 470px;
+  margin-top: 17px;
+}
+details[open] .detail-plus {
+  transform: rotate(45deg);
+  color: var(--sky);
+}

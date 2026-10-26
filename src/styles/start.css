@@ -1,0 +1,35 @@
+/* Contact section layout (the letter form itself lives in contact-form.css). */
+
+.start {
+  display: grid;
+  align-items: start;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 7%;
+  background: radial-gradient(ellipse at 90% 70%, #0b2638, var(--ink) 55%);
+}
+.start-copy > p {
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 390px;
+  margin-top: 24px;
+}
+.start-mark {
+  font: 110px var(--latin);
+  line-height: 1.2;
+  color: var(--sky);
+  margin-top: 25px;
+}
+.start form {
+  border-top: 1px solid #3b6477;
+  padding-top: 23px;
+}
+fieldset {
+  margin: 0 0 25px;
+  padding: 0;
+  border: 0;
+}
+legend {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}

@@ -1,0 +1,130 @@
+/* Hero animation, small-desktop/tablet layout and reduced motion. */
+
+@keyframes glass-breathe {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.025);
+  }
+}
+@media (max-width: 1100px) {
+  .wrap {
+    padding-inline: 5%;
+  }
+  .section {
+    padding-block: 80px;
+  }
+  .header {
+    gap: 20px;
+  }
+  .header nav {
+    gap: 22px;
+  }
+  .hero {
+    padding-inline: 5%;
+    min-height: 810px;
+  }
+  .hero h1 {
+    font-size: 93px;
+  }
+  .hero-content {
+    max-width: 530px;
+  }
+  .hero-desc {
+    max-width: 420px;
+    font-size: 14px;
+  }
+  .hero-art {
+    object-position: 38% 50%;
+  }
+  .hero-shade {
+    background:
+      linear-gradient(270deg, #080b10f5, #080b10a8 35%, #080b1000 75%), linear-gradient(0deg, #080b10, #080b1000 30%);
+  }
+  .capability-ribbon {
+    padding-inline: 3%;
+  }
+  .capability-ribbon a {
+    padding-inline: 18px;
+    font-size: 11px;
+  }
+  .project-visual {
+    padding: 30px;
+    min-height: 360px;
+  }
+  .project-caption {
+    gap: 12px;
+  }
+  .project-caption h3 {
+    font-size: 25px;
+  }
+  .project-caption p {
+    font-size: 10px;
+  }
+  .project-caption > .text-link {
+    font-size: 10px;
+  }
+  .booking-paper {
+    padding: 24px 20px;
+  }
+  .calendar-mini > span {
+    padding-inline: 8px;
+  }
+  .service-card {
+    padding: 29px;
+  }
+  .service-card h3 {
+    font-size: 26px;
+  }
+  .scope-card {
+    padding: 25px;
+  }
+  .scope-card h3 {
+    font-size: 25px;
+  }
+  .service-hero {
+    gap: 4%;
+  }
+  .service-hero-preview {
+    padding: 20px;
+  }
+  .preview-columns {
+    gap: 8px;
+  }
+  .crm-content {
+    padding: 22px 18px 15px;
+  }
+  .preview-columns > div {
+    padding: 9px;
+  }
+  .preview-columns article {
+    padding: 11px 8px;
+  }
+  .service-hero-preview .crm-shell aside {
+    display: none;
+  }
+  .service-hero-preview .crm-title strong {
+    font-size: 18px;
+  }
+  html[lang='en'] .hero h1 {
+    font-size: 86px;
+  }
+  html[lang='en'] .hero-content {
+    max-width: 520px;
+  }
+  html[lang='en'] .service-hero h1 {
+    font-size: 40px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *:before,
+  *:after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

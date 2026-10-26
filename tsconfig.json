@@ -1,0 +1,20 @@
+{
+  // Build scripts, page templates, shared code and tests (run by Node).
+  // The Worker and browser code have their own configs in src/worker and src/client.
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "lib": ["es2023"],
+    "types": ["node"],
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    // Node runs these .ts files directly by stripping types, which requires:
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "erasableSyntaxOnly": true
+  },
+  "include": ["scripts", "src/site", "src/shared", "tests"]
+}

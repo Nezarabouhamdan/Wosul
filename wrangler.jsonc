@@ -1,0 +1,33 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "wosul-website",
+  "main": "src/worker/index.ts",
+  "compatibility_date": "2026-10-01",
+
+  // Builds dist/ before `wrangler dev` / `wrangler deploy`, and again on changes during dev.
+  "build": {
+    "command": "node scripts/build.ts",
+    "watch_dir": ["src/site", "src/client", "src/shared", "src/styles", "public"],
+  },
+
+  "assets": {
+    "directory": "dist",
+    "binding": "ASSETS",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page",
+    // Everything else is served straight from dist/ without running the Worker.
+    "run_worker_first": ["/api/*", "/inbox", "/inbox/"],
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "wosul-inquiries",
+      // Replace with the id printed by `npx wrangler d1 create wosul-inquiries` (see README).
+      "database_id": "00000000-0000-4000-8000-000000000000",
+      "migrations_dir": "migrations",
+    },
+  ],
+
+  "observability": { "enabled": true },
+}

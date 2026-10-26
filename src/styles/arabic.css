@@ -1,0 +1,60 @@
+/* Cairo echoes the geometric Arabic lettering in the supplied reference.
+   Light display text is balanced with readable body and control weights. */
+html[lang='ar'] {
+  font-synthesis: none;
+}
+html[lang='ar'] h1,
+html[lang='ar'] h2,
+html[lang='ar'] h3,
+html[lang='ar'] h4 {
+  letter-spacing: 0;
+}
+html[lang='ar'] h1 {
+  font-weight: 300;
+}
+html[lang='ar'] h2 {
+  font-weight: 400;
+}
+html[lang='ar'] h3,
+html[lang='ar'] h4 {
+  font-weight: 500;
+}
+html[lang='ar'] h1 em,
+html[lang='ar'] h2 em {
+  font-weight: 300;
+}
+html[lang='ar'] .btn,
+html[lang='ar'] .text-link,
+html[lang='ar'] .demo-button,
+html[lang='ar'] legend,
+html[lang='ar'] .faq summary,
+html[lang='ar'] .service-card-foot,
+html[lang='ar'] .team-grid strong,
+html[lang='ar'] .demo-booking-form label {
+  font-weight: 600;
+}
+html[lang='ar'] .hero h1 {
+  line-height: 1.4;
+}
+html[lang='ar'] .hero-desc {
+  font-size: 16px;
+}
+html[lang='ar'] .header nav {
+  font-size: 15px;
+}
+html[lang='ar'] .eyebrow {
+  font-size: 13px;
+}
+html[lang='ar'] .footer-top h3 {
+  font-weight: 400;
+}
+@media (max-width: 900px) {
+  html[lang='ar'] .hero h1 {
+    font-size: clamp(58px, 18vw, 78px);
+    line-height: 1.38;
+  }
+  html[lang='ar'] .hero-desc {
+    font-size: 16px;
+    line-height: 1.95;
+  }
+}
